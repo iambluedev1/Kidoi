@@ -13,10 +13,18 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.dut.kidoi.R;
+import com.dut.kidoi.ui.demander.DemanderFragment;
 
 public class EnvoyerFragment extends Fragment {
 
     private EnvoyerViewModel envoyerViewModel;
+
+    public static EnvoyerFragment newInstance() {
+        EnvoyerFragment fragment = new EnvoyerFragment();
+        Bundle args = new Bundle();
+        fragment.setArguments(args);
+        return fragment;
+    }
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {

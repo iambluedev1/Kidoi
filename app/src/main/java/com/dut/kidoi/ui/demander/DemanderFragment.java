@@ -13,10 +13,18 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.dut.kidoi.R;
+import com.dut.kidoi.ui.chercher.ChercherFragment;
 
 public class DemanderFragment extends Fragment {
 
     private DemanderViewModel demanderViewModel;
+
+    public static DemanderFragment newInstance() {
+        DemanderFragment fragment = new DemanderFragment();
+        Bundle args = new Bundle();
+        fragment.setArguments(args);
+        return fragment;
+    }
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {

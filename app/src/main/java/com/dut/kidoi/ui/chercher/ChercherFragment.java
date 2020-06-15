@@ -19,6 +19,13 @@ public class ChercherFragment extends Fragment {
 
     private ChercherViewModel chercherViewModel;
 
+    public static ChercherFragment newInstance() {
+        ChercherFragment fragment = new ChercherFragment();
+        Bundle args = new Bundle();
+        fragment.setArguments(args);
+        return fragment;
+    }
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         chercherViewModel =

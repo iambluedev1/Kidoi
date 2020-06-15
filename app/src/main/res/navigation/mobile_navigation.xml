@@ -24,7 +24,7 @@
         tools:layout="@layout/fragment_envoyer" />
     <fragment
         android:id="@+id/navigation_chercher"
-        android:name="com.dut.kidoi.chercher"
+        android:name="com.dut.kidoi.ui.chercher.ChercherFragment"
         android:label="chercher"
         tools:layout="@layout/fragment_chercher" />
 </navigation>
