@@ -36,6 +36,7 @@ public class HomeFragment extends Fragment {
         final TextView logout = root.findViewById(R.id.btn_logout);
         logout.setOnClickListener(v -> {
             FirebaseAuth.getInstance().signOut();
+            FirebaseRepository.getInstance().reset();
             Intent in = new Intent(getActivity(), LoginActivity.class);
             startActivity(in);
         });

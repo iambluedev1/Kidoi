@@ -85,4 +85,8 @@ public class FirebaseRepository {
     public User getConnectedUser() {
         return connectedUser;
     }
+
+    public void reset(){
+        connectedUser = null;
+    }
 }
