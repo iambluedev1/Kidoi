@@ -8,17 +8,12 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.dut.kidoi.LoginActivity;
-import com.dut.kidoi.Profil;
 import com.dut.kidoi.R;
-import com.dut.kidoi.Root;
-import com.dut.kidoi.SignUp;
-import com.dut.kidoi.ui.envoyer.EnvoyerFragment;
+import com.dut.kidoi.repositories.FirebaseRepository;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class HomeFragment extends Fragment {
@@ -44,6 +39,9 @@ public class HomeFragment extends Fragment {
             Intent in = new Intent(getActivity(), LoginActivity.class);
             startActivity(in);
         });
+
+        final TextView sessionName = root.findViewById(R.id.session_name);
+        System.out.println(FirebaseRepository.getInstance().getConnectedUser().getLogin());
 
         /*final TextView textView = root.findViewById(R.id.text_home);
         homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {

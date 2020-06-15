@@ -1,23 +1,16 @@
 package com.dut.kidoi;
 
 import android.os.Bundle;
-import android.view.MenuItem;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.dut.kidoi.ui.chercher.ChercherFragment;
 import com.dut.kidoi.ui.demander.DemanderFragment;
 import com.dut.kidoi.ui.envoyer.EnvoyerFragment;
 import com.dut.kidoi.ui.home.HomeFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
 public class Root extends AppCompatActivity {
 

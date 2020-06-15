@@ -11,7 +11,7 @@ public class Transaction {
     private float montant;
     private boolean fait;
 
-    public Transaction(String idCredit, String idDebit, Date date, String message, float montant, boolean fait){
+    public Transaction(String idCredit, String idDebit, Date date, String message, float montant, boolean fait) {
 
         this.date = date;
         this.fait = fait;
