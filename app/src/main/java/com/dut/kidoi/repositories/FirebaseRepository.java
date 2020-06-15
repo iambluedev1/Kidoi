@@ -37,7 +37,7 @@ public class FirebaseRepository {
         user.put("username", username);
         user.put("userID", uID);
 
-        db.collection("User")
+        db.collection("users")
                 .add(user)
                 .addOnSuccessListener(documentReference -> {
                     Log.d("", "DocumentSnapshot added with ID: " + documentReference.getId());
